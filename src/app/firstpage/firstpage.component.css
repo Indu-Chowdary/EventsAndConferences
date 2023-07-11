@@ -1,0 +1,19 @@
+.imgdiv{
+  position: relative;
+}
+
+.loginclass{
+  position: absolute;
+  top: 150px;
+  margin-left: 10px;
+  max-width: 500px;
+  
+
+}
+button{
+  width: 100px;
+  max-width: 100%;
+  padding: 15px;
+
+}
+

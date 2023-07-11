@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+           <h1 class="text-center fst-bold">{{heading}}</h1>
+           <p class="text-secondary">{{paragraph}}</p>
+           
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            
+                <div class="btn btn-warning p-4 m-3 toggleButton" data-bs-toggle="collapse" data-bs-target=".collapse">DAY 1</div>
+                <div class="btn btn-warning p-4 m-3 toggleButton" data-bs-toggle="collapse" data-bs-target=".coll">DAY 2</div>
+                <div class="btn btn-warning p-4 m-3 toggleButton" data-bs-toggle="collapse" data-bs-target=".apse">DAY 3</div>
+                <div class="btn btn-warning p-4 m-3 toggleButton" data-bs-toggle="collapse" data-bs-target=".collap">DAY 4</div>
+            
+        </div>
+    </div>
+</div>
+
+<div class="container collapse p-5">
+    <div class="row">
+        <div class="col-md-3 bg-white me-5 ms-4 mb-3" *ngFor="let she of shedule" style="border: 1px gray solid;">
+              <h5 class="fst-bold text-center mt-5">{{she.cardhead}}</h5>
+              <div class="time mt-3 mb-3"><i class="bi bi-clock text-warning ms-1" ></i><span class="text-center ms-2">{{she.cardTime}}</span><i class="bi bi-map text-warning ms-4"></i><span class="text-center ms-2">{{she.cardLocation}}</span></div>
+              <p class="text-secondary text-center">{{she.cardDesc}}</p>
+              <img [src]="she.cardImage" class="mt-4">
+              <h4 class="head">{{she.cardImgDesc}}</h4>
+              <p class="head text-secondary">{{she.cardImgdesg}}</p>
+              <button class="btn btn-warning text-white ms-5 mb-5 ps-3"><a class="nav-link d-flex justify-content-end" routerLink="/navbar/checkout">Buy Ticket</a></button>
+        </div>
+    </div>
+</div>
+
+
+
+

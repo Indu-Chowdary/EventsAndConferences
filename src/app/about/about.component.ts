@@ -1,0 +1,11 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-about',
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.css']
+})
+export class AboutComponent {
+ constructor(){}
+paragraph=" But I must explain to you how all this mistaken idea of denouncing pleasure praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer."
+}

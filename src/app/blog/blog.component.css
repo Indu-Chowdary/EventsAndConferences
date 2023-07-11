@@ -1,0 +1,20 @@
+.paragraph{
+    position: relative;
+    margin-left: 150px;
+    margin-top: -140px;
+}
+
+h3:hover{
+    color:deeppink
+}
+a:link {
+    text-decoration: none;
+}
+
+p:hover{
+    color: deeppink;
+}
+button:hover{
+    background-color: deeppink;
+    color: white;
+}

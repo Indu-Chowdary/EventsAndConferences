@@ -1,0 +1,31 @@
+<div style="background-color: darkmagenta;" class="background p-5">
+ 
+        <h2 class="text-center text-white m-4">Our Ticket Pricing</h2>
+        <h4 class="text-white text-center">But I must explain to you how all this mistaken <br>idea of denouncing pleasure and prai sing pain<br> was born 
+            and I will give a complete account.</h4>
+        
+    
+ 
+
+<div class="container p-5">
+    <div class="row">
+       
+            <div class="col-md-3 bg-white me-5 ms-4  mb-3 " *ngFor="let product of products">
+                <h2 class="text-warning text-center fst-italic p-2">{{product.cartName}} </h2>
+                <p class="text-secondary text-center p-2">{{product.cartDesc}}</p>
+                <div *ngIf="product.isEdit">
+                    <input type="text" name="" id="" [(ngModel)]="product.cartPrice" class="form-control">
+                </div>
+                <h2 class="text-warning text-center fst-italic p-2" *ngIf="!product.isEdit"> {{product.cartPrice}}</h2>
+                <button class="btn btn-warning  mb-3 me-3 ms-2 text-white" routerLink="/navbar/checkout"><i class="bi bi-bag-heart" title="Buy Ticket"></i></button>
+                <button (click)="edit(product)" type="submit"class="btn btn-warning  mb-3 me-3  text-white" ><i class="bi bi-pencil-square" title="Edit"></i></button>
+                <button (click)="update(product)" type="submit" class="btn btn-warning  mb-3 me-3 text-white"><i class="bi bi-arrow-up-circle-fill" title="Update"></i></button>
+                <button (click)="cart(product)" type="submit" class="btn btn-warning  mb-3  text-white"><i class="bi bi-cart3" title="Add To Cart"></i></button>
+            </div>
+            
+</div>
+</div>
+</div>
+
+
+

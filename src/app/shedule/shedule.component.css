@@ -1,0 +1,11 @@
+.head{
+    position: relative;
+    top: -60px;
+    margin-left: 70px;
+}
+.toggleButton:hover{
+    cursor: pointer;
+    color:#fff;
+    background-color: deeppink;
+
+}

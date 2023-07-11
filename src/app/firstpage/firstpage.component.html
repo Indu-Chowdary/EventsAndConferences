@@ -1,0 +1,130 @@
+<div class="container-fluid">
+    <div class="row">
+      
+       
+        <div class="col col-md-12 "  id="logindiv" >
+            <div class="imgdiv" style="text-align:right;">
+                <img src="/assets/first.jpeg" class="img-fluid mt-5" height="400" width="800" alt="">
+            </div>
+           
+            <div class="loginclass">
+                <div >
+                    <div><h1 class="text-warning">Eventturn</h1>
+                    <p class="text-warning">Best Events And conferences <br>For The Students & Families</p><br><br>
+                    </div>
+                    <div>
+                        <form action="" name="form" (ngSubmit)="f.form.valid && dologin() " #f="ngForm">
+                            <div class="form-group ">
+                    
+                            <label for="" class="form-label">UserName</label>
+                            <input type="text"name="username" class="form-control" #uname="ngModel" required [(ngModel)]="username">
+                            <div *ngIf="f.submitted && !uname.valid" class="text-danger">*Username required</div>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="" class="form-label mt-1">Password</label>
+                            <input type="text" class="form-control" name="password"  #pass="ngModel" required [(ngModel)]="password">
+                            <div *ngIf="f.submitted && !pass.valid" class="text-danger">*Password required</div>
+                        </div>
+                        <div class="form-group m-4 justify-content-center d-flex">
+                          <button class="btn btn-success m-4  px-3 py-3 m-2 border-0 rounded" [disabled]="!f.form.valid" (click)="dologin()">Login</button>
+                          <button class="btn btn-danger m-4  px-3 py-3 m-2 border-0 rounded" >Cancel</button>
+                        </div>
+                    </form>
+                    </div>
+                    
+                    
+                    
+                    
+            </div>
+        
+           
+           </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
